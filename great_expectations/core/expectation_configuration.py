@@ -149,6 +149,15 @@ class ExpectationConfiguration(SerializableDictDot):
     """
 
     kwarg_lookup_dict: ClassVar[Mapping[str, KWargDetailsDict]] = {
+        "expect_queried_custom_query_to_return_num_rows": {
+            "domain_kwargs": ("template_dict","row_condition", "condition_parser"),
+            "success_kwargs": ("value",),
+            "default_kwarg_values": {
+                "result_format": "BASIC",
+                "include_config": True,
+                "catch_exceptions": False,
+            },
+        },
         "expect_column_to_exist": {
             "domain_kwargs": ("column", "row_condition", "condition_parser"),
             "success_kwargs": ("column_index",),
