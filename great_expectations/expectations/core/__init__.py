@@ -101,3 +101,6 @@ from .expect_table_row_count_to_equal import ExpectTableRowCountToEqual
 from .expect_table_row_count_to_equal_other_table import (
     ExpectTableRowCountToEqualOtherTable,
 )
+from .expect_queried_custom_query_to_return_num_rows import (
+    ExpectQueriedCustomQueryToReturnNumRows,
+)
