@@ -104,3 +104,6 @@ from .expect_table_row_count_to_equal_other_table import (
 from .expect_queried_custom_query_to_return_num_rows import (
     ExpectQueriedCustomQueryToReturnNumRows,
 )
+from .expect_queried_column_values_to_exist_in_second_table_column import (
+    ExpectQueriedColumnValuesToExistInSecondTableColumn,
+)
